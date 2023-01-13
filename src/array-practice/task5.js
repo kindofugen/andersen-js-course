@@ -15,3 +15,12 @@
  * generator.next(); -> 'Complete!'
  * generator.next(); -> 'Complete!'
  */
+
+// eslint-disable-next-line import/prefer-default-export
+export const createGenerator = arr => {
+  return {
+    next() {
+      return arr.length === 0 ? 'Complete!' : arr.shift();
+    },
+  };
+};

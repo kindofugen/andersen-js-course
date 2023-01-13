@@ -17,4 +17,10 @@
 //   { name: 'React', isActive: true, members: 500 },
 // ];
 
-// function membersOnActiveMeetups(meetups) {}
+// eslint-disable-next-line import/prefer-default-export
+export const membersOnActiveMeetups = meetupsInfo => {
+  return meetupsInfo.reduce((result, meetup) => {
+    result = meetup.isActive ? result + meetup.members : result + 0;
+    return result;
+  }, 0);
+};
