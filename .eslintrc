@@ -1,6 +1,7 @@
 {
   "extends": ["airbnb-base", "prettier"],
   "plugins": ["prettier"],
+  "parser": "babel-eslint",
   "rules": {
     "prettier/prettier": ["error"],
     "no-var": "off",
@@ -12,5 +13,10 @@
     "prefer-destructuring": "off",
     "func-names": "off",
     "no-underscore-dangle": "off"
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+
   }
 }
