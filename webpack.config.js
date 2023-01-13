@@ -12,6 +12,19 @@ module.exports = {
   devServer: {
     contentBase: './dist',
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ['babel-loader', 'eslint-loader'],
+      },
+      {
+        test: /\.html$/,
+        use: ['html-loader'],
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'JS Course',

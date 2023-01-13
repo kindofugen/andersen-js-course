@@ -5,7 +5,6 @@
  * Пример вызова
  * console.log(task8Old()); -> [0, 5, 10, 15]
  */
-
 export function task8Old() {
   var obj = {
     nums: [0, 2, 5, 10, 15],
@@ -24,10 +23,8 @@ export function task8Old() {
 
   return obj.calculateNumsFive();
 }
-
 // Напишите реализацию функции task8Old на ES6+ ниже этого комментария.
 // При желании, можете использовать стрелочную функцию, вместо обычной
-
 export const task8New = () => {
   const obj = {
     nums: [0, 2, 5, 10, 15],
@@ -39,4 +36,3 @@ export const task8New = () => {
   };
   return obj.calculateNumsFive();
 };
-

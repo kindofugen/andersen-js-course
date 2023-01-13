@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /**
  * При запуске приложения через yarn start,
  * этот файл будет исполняться автоматически при его редактировании
@@ -102,7 +103,19 @@ console.log('task14 new', task14New({ a: 10, b: 55, c: 3 })); // [["a", 10], ["b
 
 console.log('=============');
 
-console.log('task15 old', task15Old([['a', 1], ['b', 2]])); // {a: 1, b: 2}
-console.log('task15 new', task15New([['a', 1], ['b', 2]])); // {a: 1, b: 2}
+console.log(
+  'task15 old',
+  task15Old([
+    ['a', 1],
+    ['b', 2],
+  ]),
+); // {a: 1, b: 2}
+console.log(
+  'task15 new',
+  task15New([
+    ['a', 1],
+    ['b', 2],
+  ]),
+); // {a: 1, b: 2}
 
 console.log('=============');

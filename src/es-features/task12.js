@@ -10,7 +10,6 @@
  * console.log(task12Old({ obj2: { some: true }}, 'obj2', 'some2' )); -> undefined
  * console.log(task12Old({ obj3: { some: true }}, 'obj2', 'some' )); -> undefined
  */
-
 export function task12Old(object, firstFieldName, secondFieldName) {
   return object[firstFieldName] && object[firstFieldName][secondFieldName];
 }
